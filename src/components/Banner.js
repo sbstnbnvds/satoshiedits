@@ -15,7 +15,6 @@ export const Banner = () => {
               <div>
                 <h1>Satoshi Edits</h1>
                   <p>Satoshi Edits is the perfect solution for anyone looking to create a stand-out video. Our top quality video editing services will help improve you business video portfolio, making your company more succesful and noticed.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>
           </Col>
           <Col xs={12} md={6} xl={5}>
