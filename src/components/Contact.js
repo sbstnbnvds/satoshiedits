@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
+import clapperboard from '../assets/img/clapperboard.png'
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -48,7 +49,7 @@ export const Contact = () => {
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
-                <img src={contactImg} alt="Contact Us"/>
+                <img src={clapperboard} alt="Contact Us"/>
           </Col>
           <Col size={12} md={6}>
             <TrackVisibility>
