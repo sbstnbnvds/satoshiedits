@@ -2,7 +2,7 @@ import React from "react";
 import './Slideshow.css'
 
 
-const colors = ["#0088FE", "#00C49F", "#FFBB28"];
+const colors = ["#EF767A", "#EF767A", "#EF767A"];
 const delay = 2500;
 
 function Slideshow() {
