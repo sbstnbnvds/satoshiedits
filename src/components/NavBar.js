@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+import satoshieditslogo from '../assets/img/satoshieditslogo.svg'
+import navIcon1 from '../assets/img/navicons/nav-icon1.svg';
+import navIcon2 from '../assets/img/navicons/nav-icon2.svg';
+import navIcon3 from '../assets/img/navicons/nav-icon3.svg';
+import navIcon4 from '../assets/img/navicons/nav-icon4.svg';
 import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
-import satoshieditslogo from '../assets/img/satoshieditslogo.svg'
 
 export const NavBar = () => {
 
@@ -16,7 +17,7 @@ export const NavBar = () => {
 
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY > 30) {
+      if (window.scrollY > 10) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -53,6 +54,7 @@ export const NavBar = () => {
                 <a href="#"><img src={navIcon1} alt="" /></a>
                 <a href="#"><img src={navIcon2} alt="" /></a>
                 <a href="#"><img src={navIcon3} alt="" /></a>
+                <a href="#"><img src={navIcon4} alt="" /></a>
               </div>
             </span>
           </Navbar.Collapse>

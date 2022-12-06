@@ -1,9 +1,13 @@
 import React from "react";
 import './Slideshow.css'
+import Autoplay from "./Autoplay";
+import bannervid1 from "../../assets/img/bannervid1.mp4"
+import bannervid2 from "../../assets/img/bannervid2.mp4"
+import bannervid3 from "../../assets/img/bannervid3.mp4"
 
-
-const colors = ["#0088FE", "#00C49F", "#FFBB28"];
-const delay = 2500;
+const sourceString = "https://stream.mux.com/6fiGM5ChLz8T66ZZiuzk1KZuIKX8zJz00/medium.mp4"
+const vids = [bannervid1, bannervid2, bannervid3];
+const delay = 3000;
 
 function Slideshow() {
   const [index, setIndex] = React.useState(0);
@@ -20,7 +24,7 @@ function Slideshow() {
     timeoutRef.current = setTimeout(
       () =>
         setIndex((prevIndex) =>
-          prevIndex === colors.length - 1 ? 0 : prevIndex + 1
+          prevIndex === vids.length - 1 ? 0 : prevIndex + 1
         ),
       delay
     );
@@ -36,17 +40,15 @@ function Slideshow() {
         className="slideshowSlider"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
-        {colors.map((backgroundColor, index) => (
-          <div
-            className="slide"
-            key={index}
-            style={{ backgroundColor }}
-          ></div>
+        {vids.map((video, index) => (
+          <div className="slide" key={index}>
+            <Autoplay sourceVideo={video} />
+          </div>
         ))}
       </div>
-
+      {/* 
       <div className="slideshowDots">
-        {colors.map((_, idx) => (
+        {vids.map((_, idx) => (
           <div
             key={idx}
             className={`slideshowDot${index === idx ? " active" : ""}`}
@@ -55,7 +57,7 @@ function Slideshow() {
             }}
           ></div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }
