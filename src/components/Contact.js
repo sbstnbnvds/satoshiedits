@@ -28,7 +28,7 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    emailjs.sendForm('service_o3h591j', 'template-4r6wy1r', form.current, '37StAMjMMeJUaQW1I')
+    emailjs.sendForm('service_evo0k8m', 'template_qcejy5g', form.current, '7HY3IvLqDleIUciee')
     let response = await fetch("http://localhost:3000/#contact", {
       method: "POST",
       headers: {
