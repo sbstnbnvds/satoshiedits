@@ -8,15 +8,15 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
-app.listen(5000, () => console.log("Server Running"));
+app.listen(3000, () => console.log("Server Running"));
 console.log(process.env.EMAIL_USER);
 console.log(process.env.EMAIL_PASS);
 
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: "rocketcitybitcoin@gmail.com",
-    pass: ""
+    user: "sbstnbnvdsa@gmail.com",
+    pass: "wby8CEV9tyr_daj8bfn"
   },
 });
 
@@ -36,7 +36,7 @@ router.post("/contact", (req, res) => {
   const mail = {
     from: name,
     to: "sbstnbnvdsa@gmail.com",
-    subject: "Contact Form Submission - Portfolio",
+    subject: "Contact Form - satoshiedits.com",
     html: `<p>Name: ${name}</p>
            <p>Email: ${email}</p>
            <p>Phone: ${phone}</p>

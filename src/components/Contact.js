@@ -1,17 +1,18 @@
-import { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../assets/img/contact-img.svg";
 import clapperboard from '../assets/img/clapperboard.png'
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import emailjs from 'emailjs-com'
 
 export const Contact = () => {
+  const form = useRef();
   const formInitialDetails = {
     firstName: '',
     lastName: '',
     email: '',
     phone: '',
-    message: ''
+    message: '',
   }
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState('Send');
@@ -27,7 +28,8 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:3000", {
+    emailjs.sendForm('service_o3h591j', 'template-4r6wy1r', form.current, '37StAMjMMeJUaQW1I')
+    let response = await fetch("http://localhost:3000/#contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",

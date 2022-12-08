@@ -5,7 +5,7 @@ import experience from '../assets/img/whyus/experience.svg'
 
 const WhyUs = () => {
     return (
-        <section className='why-us'>
+        <section className='why-us' id='why-us'>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
@@ -19,17 +19,17 @@ const WhyUs = () => {
                     <div className="col-md-6 col-lg-4 why-us-card">
                         <img src={quality} alt="Outstanding Quality" />
                         <h3>Outstanding Quality</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et rerum ducimus cum tempora magnam excepturi ab, aspernatur nobis sint cumque minus delectus totam.</p>
+                        <p>Satoshi edits is a quality-driven video editing agency. We strive to provide the best possible editing experience for our clients, whether it's for business or personal needs. Our team will strive to bring you the highest quality product possible.</p>
                     </div>
                     <div className="col-md-6 col-lg-4 why-us-card">
                         <img src={experience} alt="Extensive Experience" />
                         <h3>Extensive Experience</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et rerum ducimus cum tempora magnam excepturi ab, aspernatur nobis sint cumque minus delectus totam.</p>
+                        <p>We have skilled and experienced video editors ready to create high-quality videos for your business or project. We strive to provide our clients with quality, affordable video editing services that will help them stand out from the competition.</p>
                     </div>
                     <div className="col-md-6 col-lg-4 why-us-card">
                         <img src={creativity} alt="Incredible Creativity" />
                         <h3>Incredible Creativity</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et rerum ducimus cum tempora magnam excepturi ab, aspernatur nobis sint cumque minus delectus totam.</p>
+                        <p>We use creative skills and the latest technology to personalize your videos, and give them personality and purpose. From online marketing videos to product introductions, we can make any video reflect your unique brand and voice. So why wait? Contact us today to get started!</p>
                     </div>
                 </div>
             </div>
