@@ -14,7 +14,7 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
               <div>
                 <h1>Satoshi Edits</h1>
-                  <p>Satoshi Edits is the perfect solution for anyone looking to create a stand-out video. Our top quality video editing services will help improve you business video portfolio, making your company more succesful and noticed.</p>
+                  <p>Satoshi Edits is a video editing service helping companies and projects create exceptional videos. Our our quality editing services help improve your business video portfolio and improve your businesses visibility and reputation.</p>
               </div>
           </Col>
           <Col xs={12} md={6} xl={5}>

@@ -22,7 +22,7 @@ export const Footer = () => {
               <a href="https://www.instagram.com/satoshi_edits/" target="_blank" ><img src={navIcon3} alt="instagram" /></a>
               <a href="https://twitter.com/SatoshiEdits" target="_blank" ><img src={navIcon4} alt="twitter" /></a>
             </div>
-            <p>Copyright 2022. All Rights Reserved</p>
+            <p>Copyright &copy; 2022. All Rights Reserved</p>
           </Col>
         </Row>
       </Container>
