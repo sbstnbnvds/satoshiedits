@@ -653,6 +653,68 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 
+/************ Pricing    ************/
+.pricing{
+  padding: 80px 60px 0 60px;
+  /* background-color: #fff; */
+}
+.pricing>.row{
+  /* background-color: #000; */
+}
+.pricing-box{
+  height: 400px;
+  margin: 20px 9px;
+  background-color: #d4d0cf;
+  border-radius: 0.3rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.pricing-box h3{
+  text-align: center;
+  padding-top: 45px;
+}
+.pricing-box p{
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 40px
+}
+.pricing-box p::before{
+  content: '$';
+}
+.pricing-box ul{
+  list-style-type: none;
+  padding: 15px 12px 15px 40px;
+  height: 170px;
+}
+.pricing-box div.custom-main{
+  height: 170px;
+}
+.but-1{
+  align-self: center;
+  margin: 0% !important;
+  padding: 0 !important;
+  width: 90%;
+  border-bottom: 1px solid #000;
+}
+.but-1 button{
+  border: 3px solid #e84247;
+  border-top-width: 10px;
+  background-color: #fff;
+}
+.pricing-box li{
+  margin-bottom: 10px;
+}
+.pricing-box>ul>li::before{
+  content: '✔️';
+
+}
+#gold-plan{
+  background-color: #ea5459;
+}
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
 /************ Footer Css ************/
 .footer {
   padding: 10px 0 50px 0;
