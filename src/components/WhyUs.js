@@ -24,7 +24,7 @@ const WhyUs = () => {
                     <div className="col-md-6 col-lg-4 why-us-card">
                         <img src={experience} alt="Extensive Experience" />
                         <h3>Extensive Experience</h3>
-                        <p>Whether it's for business or personal needs, Satoshi Edits strives to provide the best possible experience for our clients. We work closely with our clients to define and understand project requirements all with the goal of producing exceptional content that is sure to convince your target audiences.</p>
+                        <p>We have skilled and experienced video editors ready to create high-quality videos for your business or project. We strive to provide our clients with quality, affordable video editing services that will help them stand out from the competition.</p>
                     </div>
                     <div className="col-md-6 col-lg-4 why-us-card">
                         <img src={creativity} alt="Incredible Creativity" />
