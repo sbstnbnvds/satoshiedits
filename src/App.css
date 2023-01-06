@@ -662,7 +662,7 @@ span.navbar-text {
   margin-bottom: 10px;
 }
 .pricing-box>ul>li::before{
-  content: '✔️';
+  content: '- ';
 
 }
 #gold-plan{
