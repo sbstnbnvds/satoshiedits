@@ -705,7 +705,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 10px;
 }
 .pricing-box>ul>li::before{
-  content: '✔️';
+  content: '- ';
 
 }
 #gold-plan{
