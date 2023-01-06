@@ -5,6 +5,9 @@ const Pricing = () => {
     return (
         <div className="pricing">
             <div className="row">
+                <div className="title">
+                    <h2>Pricing</h2>
+                </div>
                 <div className="col-12 col-md-4 nopadding" id="starter">
                     <div className="pricing-box" id="basic-plan">
                         <h3>STARTER</h3>

@@ -12,7 +12,6 @@ const WhyUs = () => {
                         <h2>
                             Why Satoshi Edits?
                         </h2>
-
                     </div>
                 </div>
                 <div className="row why-us-container">
